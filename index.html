@@ -20,15 +20,45 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "서울특별시 출장 균형케어 마사지 | 일정에 맞춘 코스 비교 - 바른케어",
-    "url": "https://thebareun-care.netlify.app/",
-    "description": "바른케어 서울특별시 안내. 선입금 없이 현장에서 확인하는 출장마사지·출장안마·홈타이 코스와 시간, 지역별 균형케어 이용 순서를 정리했습니다.",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "바른케어",
-      "url": "https://thebareun-care.netlify.app/"
-    }
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "바른케어",
+        "url": "https://thebareun-care.netlify.app/",
+        "telephone": "0507-1280-3344",
+        "priceRange": "₩₩",
+        "description": "바른케어 서울특별시 안내. 선입금 없이 현장에서 확인하는 출장마사지·출장안마·홈타이 코스와 시간, 지역별 균형케어 이용 순서를 정리했습니다."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "서울 전지역 균형케어 방문 예약은 어떻게 진행되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "서울 25개 자치구 어디서나 희망 주소와 원하시는 코스를 알려주시면 가장 가까운 이동 동선의 관리사를 신속 배정합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "선입금이나 예약금을 요구하지 않나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "바른케어는 선입금을 일체 요구하지 않으며 관리사가 현장에 도착한 후 코스를 확인하고 결제하는 100% 현장 후불제입니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "자택 외에 오피스텔이나 호텔에서도 이용 가능한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "네, 정확한 주소지와 호수, 출입 방법만 확인해 주시면 조용하고 안전하게 프라이빗 관리를 받으실 수 있습니다."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -69,7 +99,33 @@
       </div>
     </nav>
 
-    <section class="section providers">
+    <!-- 고유 본문 스토리텔링 섹션 -->
+    <section class="section">
+      <div class="container">
+        <div class="local-story-card">
+          <h3>서울특별시 방문 케어 안내 &amp; 라이프스타일 힐링</h3>
+          <p>서울 전지역 지역은 일상 속에서 누적된 신체 피로와 전신 스트레스를 자연스럽게 풀어주는 맞춤형 방문 힐링 솔루션을 지향하는 곳입니다.</p>
+          <p>불필요한 대기 시간이나 이동 스트레스 없이 고객님의 희망 시각에 맞춰 최적의 도로 동선을 확인하여 숙련된 테라피스트를 정시 배정합니다.</p>
+          <p>바른케어은 선입금이나 예약금을 절대로 요구하지 않는 '100% 현장 안심 후불제'를 철저히 지킵니다. 관리사가 고객님의 장소에 도착한 뒤 신청하신 관리 코스와 범위, 요금을 투명하게 재확인하고 결제가 이루어지므로 사기 피해 걱정 없이 안심하고 신뢰할 수 있습니다.</p>
+          <div class="guide-box-grid">
+            <div class="guide-box-item">
+              <b>🛡️ 100% 현장 후불제 원칙</b>
+              <span>예약금이나 선입금을 절대 요구하지 않으며, 현장에서 코스를 확인한 후 안심 결제합니다.</span>
+            </div>
+            <div class="guide-box-item">
+              <b>⚡ 균형 잡힌 동선 조율</b>
+              <span>서울 주요 거점별 이동 상황을 실시간 확인하여 지연과 대기를 최소화합니다.</span>
+            </div>
+            <div class="guide-box-item">
+              <b>🧘 바른 체형 릴렉스</b>
+              <span>건식, 아로마, 스웨디시 등 당일 몸 상태에 최적화된 강도와 순환 관리를 제공합니다.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section providers soft">
       <div class="container">
         <div class="section-row">
           <h2 class="section-title">서울 추천 케어 제휴 매장</h2>
@@ -199,18 +255,23 @@
       </div>
     </section>
 
-    <section class="section consult" id="consult">
+    <!-- FAQ 섹션 -->
+    <section class="section soft">
       <div class="container">
-        <div class="consult-card">
-          <div>
-            <b>운영 및 결제 안내</b>
-            <p>선입금을 절대 요구하지 않으며 상단 제휴 매장 번호로 편하게 문의하세요.</p>
-          </div>
-          <div>
-            <b>안심 후불제 원칙</b>
-            <p>현장에서 관리 범위와 비용을 확인한 후 안심하고 결제합니다.</p>
-          </div>
-          <a href="#courses">코스 다시 보기</a>
+        <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+        <div class="faq-list">
+          <details open>
+            <summary>서울 전지역 균형케어 방문 예약은 어떻게 진행되나요?</summary>
+            <p>서울 25개 자치구 어디서나 희망 주소와 원하시는 코스를 알려주시면 가장 가까운 이동 동선의 관리사를 신속 배정합니다.</p>
+          </details>
+          <details>
+            <summary>선입금이나 예약금을 요구하지 않나요?</summary>
+            <p>바른케어는 선입금을 일체 요구하지 않으며 관리사가 현장에 도착한 후 코스를 확인하고 결제하는 100% 현장 후불제입니다.</p>
+          </details>
+          <details>
+            <summary>자택 외에 오피스텔이나 호텔에서도 이용 가능한가요?</summary>
+            <p>네, 정확한 주소지와 호수, 출입 방법만 확인해 주시면 조용하고 안전하게 프라이빗 관리를 받으실 수 있습니다.</p>
+          </details>
         </div>
       </div>
     </section>

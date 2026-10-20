@@ -19,15 +19,45 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "포천 출장 온쉼케어 마사지 | 편안한 이용 순서 - 바른케어",
-    "url": "https://thebareun-care.netlify.app/areas/gyeonggi/pocheon-si/",
-    "description": "바른케어 경기도 포천 안내. 선입금 없이 현장에서 확인하는 출장마사지·홈타이 코스와 시간, 온전한 휴식과 회복을 돕는 편안한 온쉼 케어를 정리했습니다.",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "바른케어",
-      "url": "https://thebareun-care.netlify.app/"
-    }
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "바른케어 포천",
+        "url": "https://thebareun-care.netlify.app/areas/gyeonggi/pocheon-si/",
+        "telephone": "0507-1280-3344",
+        "priceRange": "₩₩",
+        "description": "바른케어 경기도 포천 안내. 선입금 없이 현장에서 확인하는 출장마사지·홈타이 코스와 시간, 온전한 휴식과 회복을 돕는 편안한 온쉼 케어를 정리했습니다."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://thebareun-care.netlify.app/" },
+          { "@type": "ListItem", "position": 2, "name": "경기", "item": "/gyeonggi/" },
+          { "@type": "ListItem", "position": 3, "name": "포천", "item": "https://thebareun-care.netlify.app/areas/gyeonggi/pocheon-si/" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "포천 방문 시 평균 소요 시간은 어떻게 되나요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "포천 인근 제휴 매장의 이동 동선을 우선 배정하여 평균 30분 내외로 도착할 수 있도록 조율합니다."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "선입금이나 예약금이 필요한가요?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "선입금을 일체 요구하지 않으며 관리사 방문 후 현장에서 코스를 확인하고 결제하는 100% 현장 후불제입니다."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -56,7 +86,19 @@
       </div>
     </section>
 
-    <section class="section providers">
+    <!-- 구/시 고유 스토리텔링 섹션 -->
+    <section class="section">
+      <div class="container">
+        <div class="local-story-card">
+          <h3>포천 라이프스타일 맞춤 힐링 솔루션</h3>
+          <p>경기 포천 지역은 일상 속에서 누적된 신체 피로와 전신 스트레스를 자연스럽게 풀어주는 맞춤형 방문 힐링 솔루션을 지향하는 곳입니다.</p>
+          <p>불필요한 대기 시간이나 이동 스트레스 없이 고객님의 희망 시각에 맞춰 최적의 도로 동선을 확인하여 숙련된 테라피스트를 정시 배정합니다.</p>
+          <p>바른케어은 선입금이나 예약금을 절대로 요구하지 않는 '100% 현장 안심 후불제'를 철저히 지킵니다. 관리사가 고객님의 장소에 도착한 뒤 신청하신 관리 코스와 범위, 요금을 투명하게 재확인하고 결제가 이루어지므로 사기 피해 걱정 없이 안심하고 신뢰할 수 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section providers soft">
       <div class="container">
         <div class="section-row">
           <h2 class="section-title">포천 직통 상담 추천 업체</h2>
@@ -178,12 +220,19 @@
       </div>
     </section>
 
-    <section class="section consult" id="consult">
+    <!-- FAQ -->
+    <section class="section soft">
       <div class="container">
-        <div class="consult-card">
-          <div><b>운영 안내</b><p>정직한 후불제와 편안한 힐링 테라피를 약속합니다.</p></div>
-          <div><b>코스 상담</b><p>상단 제휴 매장 직통 번호로 안내받으세요.</p></div>
-          <a href="/">홈으로 이동</a>
+        <h2 class="section-title">포천 이용 안내 FAQ</h2>
+        <div class="faq-list">
+          <details open>
+            <summary>포천 방문 시 평균 소요 시간은 어떻게 되나요?</summary>
+            <p>포천 인근 제휴 매장의 이동 동선을 우선 배정하여 평균 30분 내외로 도착할 수 있도록 조율합니다.</p>
+          </details>
+          <details>
+            <summary>선입금이나 예약금이 필요한가요?</summary>
+            <p>바른케어는 선입금을 일체 요구하지 않으며 관리사 방문 후 현장에서 코스를 확인하고 결제하는 100% 현장 후불제입니다.</p>
+          </details>
         </div>
       </div>
     </section>
